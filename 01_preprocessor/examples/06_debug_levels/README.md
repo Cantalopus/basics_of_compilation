@@ -26,7 +26,7 @@ int main(int argv, char** argc)
     return 0;
 }
 ```
-We also make the appropriate changes to our CMake listfiles. Such as changing all of our target names to `${PROJECT_NAME}. This will allow us to easier copy future examples. 
+We also make the appropriate changes to our CMake listfiles. Such as changing all of our target names to `${PROJECT_NAME}`. This will allow us to easier copy future examples. 
 ```cmake
 add_executable(${PROJECT_NAME}
     main.cpp
