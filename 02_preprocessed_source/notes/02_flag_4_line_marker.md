@@ -165,7 +165,7 @@ void cpp_function(int){}
 
 extern "C" void c_function(int){}
 ```
-then, compile it to a .o file, and then use:  
+then, compile it to a `.o` file, and then use:  
 ```Bash 
 nm
 ```
