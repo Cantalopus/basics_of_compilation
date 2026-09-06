@@ -1,13 +1,28 @@
 # Predefine macros...
 ```C++
+#include <iostream>
+
+#define NUMBER 42
+
 int main()
 {
-    std::cout<<NUMBER<<'\n';
+#if __cplusplus >= 202002L
 
-    std::cout<<"Files "<<__FILE__<<'\n';
-    std::cout<<"Lines: "<<__LINE__<<'\n';
-    std::cout<<"Compiled on: "<<__DATE__<<'\n';
-    std::cout<<"Compiled at: "<<__TIME__<<'\n';
+    std::cout<<"C++20 or newer\n";
+
+#elif __cplusplus >= 201703L
+
+    std::cout<<"C++17\n";
+
+#elif __cplusplus >= 201402L
+
+    std::cout<<"C++14\n";
+
+#else
+
+    std::cout<<"Older C++ standard\n";
+    
+#endif
 
     return 0;
 }
@@ -15,25 +30,14 @@ int main()
 ### **output**
 ---
 ```text
-201703
+C++20 or newer
 ```
 ### **main.i**
 ```C++
 int main()
 {
-    std::cout<<201703L<<'\n';
-
+    std::cout<<"C++20 or newer\n";
     return 0;
 }
 ```
-For other version of `C++` we'll see:
-> -std=c++11  ->  201103  
-
-> -std=c++14  ->  201402  
-
-> -std=c++17  ->  201703  
-
-> -std=c++20  ->  202002  
-
-> -std=c++20  ->  202100  
 

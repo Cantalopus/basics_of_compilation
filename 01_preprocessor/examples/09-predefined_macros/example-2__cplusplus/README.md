@@ -13,19 +13,13 @@ int main()
 ### **output**
 ---
 ```text
-Files main.cpp
-Lines: 8
-Compiled on: Sep  5 2026
-Compiled at: 02:06:17
+202100
 ```
 ### **main.i**
 ```C++
 int main()
 {
-    std::cout<<"Files "<<"main.cpp"<<'\n';
-    std::cout<<"Lines: "<<8<<'\n';
-    std::cout<<"Compiled on: "<<"Sep  5 2026"<<'\n';
-    std::cout<<"Compiled at: "<<"02:09:03"<<'\n';
+    std::cout<<201703L<<'\n';
 
     return 0;
 }
