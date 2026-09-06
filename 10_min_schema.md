@@ -1,3 +1,4 @@
+```cmake
 {
     "version"                                          : 10,
     "cmakeMinimumRequired"                          :
@@ -118,3 +119,4 @@
                 }
         }
 }
+```
