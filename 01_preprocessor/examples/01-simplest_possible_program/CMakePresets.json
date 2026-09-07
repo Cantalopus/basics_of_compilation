@@ -1,0 +1,16 @@
+{
+    "version": 10,
+    
+        "configurePresets":
+            [
+                {
+                "$comment":
+                    [
+                        "simplest possible preset"
+                    ],
+                    "name": "default",
+                    "generator":"Ninja",
+                    "binaryDir": "${sourceDir}/build"
+                }
+            ]
+}
