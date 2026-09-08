@@ -7,7 +7,7 @@ CPPFLAGS = -MMD -MP -Isrc/numbers
 CXXFLAGS = -std=c++20 -Wall -Wextra 
 LDFLAGS = 
 
-.PHONY: all
+.PHONY: all run clean
 
 all: bin/main
 
@@ -21,13 +21,11 @@ build/%.o: src/%.cpp
 
 -include $(DEP)
 
-.PHONY: run
-
+#.PHONY: run
 run: bin/main
 	./bin/main
 
-.PHONY: clean
-
+#.PHONY: clean
 clean:
 	rm -rf build
 	rm -rf bin
