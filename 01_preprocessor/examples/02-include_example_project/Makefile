@@ -7,7 +7,7 @@ CPPFLAGS = -MMD -MP -Isrc/numbers
 CXXFLAGS = -std=c++20 -Wall -Wextra 
 LDFLAGS = 
 
-.PHONY: all run clean
+.PHONY: all run clean inc
 
 all: bin/main
 
