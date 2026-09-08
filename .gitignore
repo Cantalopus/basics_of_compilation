@@ -5,3 +5,4 @@ bin/cmake_install.cmake
 *.i
 *.o
 bin/
+compile_commands.json

@@ -25,7 +25,7 @@ int main()
 
 Then we run the command(Bash):
 ```Bash
-g++ -E main.cpp > build/main.i
+g++ -E -Isrc/numbers src/app/main.cpp -o build/main.i
 ```
 and inspect:
 ```Bash

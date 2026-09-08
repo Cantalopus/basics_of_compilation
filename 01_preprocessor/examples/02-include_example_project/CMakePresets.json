@@ -1,0 +1,16 @@
+{
+    "version": 10,
+    "configurePresets": [
+        {
+            "name": "default",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/default",
+            "cacheVariables": {
+                "CMAKE_EXPORT_COMPILE_COMMANDS":{
+                    "type": "BOOL",
+                    "value": "ON"
+                }
+            }
+        }
+    ]
+}

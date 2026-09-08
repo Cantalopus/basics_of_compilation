@@ -29,3 +29,6 @@ run: bin/main
 clean:
 	rm -rf build
 	rm -rf bin
+
+inc: 
+	ln -sfn ./build/default/compile_commands.json compile_commands.json
