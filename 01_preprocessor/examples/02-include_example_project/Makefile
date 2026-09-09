@@ -30,5 +30,6 @@ clean:
 	rm -rf build
 	rm -rf bin
 
+#.PHONY: inc
 inc: 
 	ln -sfn ./build/default/compile_commands.json compile_commands.json
