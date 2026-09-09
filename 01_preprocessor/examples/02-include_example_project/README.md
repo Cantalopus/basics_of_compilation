@@ -1,5 +1,5 @@
 # Include Example Project:
-Line 423: This tiny experiment establishes foundational facts simultaneously:
+This simple experiment establishes foundational facts simultaneously:
 ```text
 #include    -> brings another file's contents into preprocessing  
 
